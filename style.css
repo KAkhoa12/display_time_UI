@@ -1,0 +1,32 @@
+/* styles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clock {
+    color: #0f0;
+    font-size: 10vw; /* Sử dụng đơn vị vw để kích thước chữ linh hoạt */
+    text-shadow: 0 0 10px #0f0;
+    border: 2px solid #0f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Media query để điều chỉnh kích thước chữ trên các thiết bị nhỏ */
+@media (max-width: 768px) {
+    .clock {
+        font-size: 15vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        font-size: 20vw;
+    }
+}
